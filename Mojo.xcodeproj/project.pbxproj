@@ -14,6 +14,9 @@
 		AD0EE1B71A27B79D00DA7796 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0EE1B61A27B79D00DA7796 /* Images.xcassets */; };
 		AD0EE1BA1A27B79D00DA7796 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0EE1B81A27B79D00DA7796 /* LaunchScreen.xib */; };
 		AD0EE1C61A27B79D00DA7796 /* MojoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EE1C51A27B79D00DA7796 /* MojoTests.m */; };
+		AD0EE1D01A27CCC600DA7796 /* datasource.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD0EE1CF1A27CCC600DA7796 /* datasource.plist */; };
+		AD0EE1D51A27CEC100DA7796 /* MainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EE1D41A27CEC100DA7796 /* MainCell.m */; };
+		AD0EE1D91A27D32100DA7796 /* SubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0EE1D71A27D32100DA7796 /* SubCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		AD0EE1BF1A27B79D00DA7796 /* MojoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MojoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0EE1C41A27B79D00DA7796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD0EE1C51A27B79D00DA7796 /* MojoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MojoTests.m; sourceTree = "<group>"; };
+		AD0EE1CF1A27CCC600DA7796 /* datasource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = datasource.plist; sourceTree = "<group>"; };
+		AD0EE1D31A27CEC100DA7796 /* MainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCell.h; sourceTree = "<group>"; };
+		AD0EE1D41A27CEC100DA7796 /* MainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainCell.m; sourceTree = "<group>"; };
+		AD0EE1D61A27D32100DA7796 /* SubCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCell.h; sourceTree = "<group>"; };
+		AD0EE1D71A27D32100DA7796 /* SubCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +89,16 @@
 		AD0EE1A81A27B79D00DA7796 /* Mojo */ = {
 			isa = PBXGroup;
 			children = (
+				AD0EE1CF1A27CCC600DA7796 /* datasource.plist */,
 				AD0EE1AD1A27B79D00DA7796 /* AppDelegate.h */,
 				AD0EE1AE1A27B79D00DA7796 /* AppDelegate.m */,
 				AD0EE1B01A27B79D00DA7796 /* ViewController.h */,
 				AD0EE1B11A27B79D00DA7796 /* ViewController.m */,
 				AD0EE1B31A27B79D00DA7796 /* Main.storyboard */,
+				AD0EE1D31A27CEC100DA7796 /* MainCell.h */,
+				AD0EE1D41A27CEC100DA7796 /* MainCell.m */,
+				AD0EE1D61A27D32100DA7796 /* SubCell.h */,
+				AD0EE1D71A27D32100DA7796 /* SubCell.m */,
 				AD0EE1B61A27B79D00DA7796 /* Images.xcassets */,
 				AD0EE1B81A27B79D00DA7796 /* LaunchScreen.xib */,
 				AD0EE1A91A27B79D00DA7796 /* Supporting Files */,
@@ -200,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0EE1B51A27B79D00DA7796 /* Main.storyboard in Resources */,
+				AD0EE1D01A27CCC600DA7796 /* datasource.plist in Resources */,
 				AD0EE1BA1A27B79D00DA7796 /* LaunchScreen.xib in Resources */,
 				AD0EE1B71A27B79D00DA7796 /* Images.xcassets in Resources */,
 			);
@@ -221,6 +235,8 @@
 			files = (
 				AD0EE1B21A27B79D00DA7796 /* ViewController.m in Sources */,
 				AD0EE1AF1A27B79D00DA7796 /* AppDelegate.m in Sources */,
+				AD0EE1D51A27CEC100DA7796 /* MainCell.m in Sources */,
+				AD0EE1D91A27D32100DA7796 /* SubCell.m in Sources */,
 				AD0EE1AC1A27B79D00DA7796 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +428,7 @@
 				AD0EE1CB1A27B79D00DA7796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD0EE1CC1A27B79D00DA7796 /* Build configuration list for PBXNativeTarget "MojoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +437,7 @@
 				AD0EE1CE1A27B79D00DA7796 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
